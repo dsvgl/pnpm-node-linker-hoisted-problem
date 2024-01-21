@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "strict": true,
+    "strictFunctionTypes": false,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "types": ["@nuxt/types", "@types/node", "@nuxt/typescript-build", "@pinia/nuxt"]
+  },
+  "include": [
+    "**/*.vue",
+    "**/*.ts",
+    "index.d.ts",
+    "./types/runtime-config.d.ts",
+    "./types/environment.d.ts"
+  ],
+  "exclude": ["**/node_modules/*", ".nuxt", "dist"],
+  "vueCompilerOptions": {
+    // https://github.com/vuejs/vue/blob/main/CHANGELOG.md#volar-compatibility
+    "target": 2.7
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@company/monorepo",
+  "version": "3.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "super-app:dev": "pnpm -F @company/super-app dev",
+    "super-app:build": "pnpm -F @company/super-app build",
+    "super-app:start": "pnpm -F @company/super-app start",
+    "nuke": "find . -name node_modules -type d -exec rm -rf  {} \\;"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.17.1",
+    "pnpm": ">=8.5.1"
+  },
+  "packageManager": "pnpm@8.5.1",
+  "pnpm": {
+    "overrides": {
+      "postcss-scss": "3.0.5"
+    }
+  },
+  "volta": {
+    "node": "16.17.1"
+  }
+}

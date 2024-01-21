@@ -1,0 +1,33 @@
+{
+  "name": "@company/super-app",
+  "version": "3.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "analyze": "nuxt build --analyze",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/composition-api": "0.33.1",
+    "@pinia/nuxt": "0.2.1",
+    "nuxt": "2.17.1",
+    "pinia": "2.1.6",
+    "vue": "2.7.14",
+    "vue-server-renderer": "2.7.14",
+    "vue-template-compiler": "2.7.14"
+  },
+  "devDependencies": {
+    "@nuxt/types": "2.17.1",
+    "@nuxt/typescript-build": "3.0.1",
+    "@types/node": "20.5.7",
+    "sass": "1.32.13",
+    "sass-loader": "10.3.1",
+    "typescript": "5.2.2"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
