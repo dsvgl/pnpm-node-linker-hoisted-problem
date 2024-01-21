@@ -32,7 +32,7 @@ export default {
 
   components: true,
 
-  buildModules: ["@nuxt/typescript-build", "@nuxtjs/composition-api/module", "@pinia/nuxt"],
+  buildModules: ["@nuxt/typescript-build", "@nuxtjs/composition-api/module"],
 
   modules: [],
 
@@ -53,14 +53,5 @@ export default {
         `,
       },
     },
-
-    // Pinia module fix: https://github.com/vuejs/pinia/issues/675#issuecomment-945602370
-    // extend(config) {
-    //   config.module!.rules.push({
-    //     test: /\.mjs$/,
-    //     include: /node_modules/,
-    //     type: 'javascript/auto',
-    //   });
-    // },
   },
 };
